@@ -1,5 +1,8 @@
 source 'https://rubygems.org'
 
+# Heroku WARINGS
+gem 'rails_12factor'
+ruby '2.1.3'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.1.6'
@@ -7,10 +10,10 @@ gem 'rails', '4.1.6'
 group :development, :test do
     gem 'sqlite3', '1.3.9'
 end
-
 group :production do
     gem 'pg'
 end
+
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 4.0.3'
 # Use Uglifier as compressor for JavaScript assets
